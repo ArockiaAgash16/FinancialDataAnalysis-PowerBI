@@ -6,37 +6,14 @@ This project delivers a **Financial Risk Metrics Dashboard** using **Power BI**,
 
 ---
 
-## 🎯 Key Objectives
+## 🔌 Data Connection & Transformation Workflow
 
-- Track **Year-over-Year (YOY) changes** in loan amounts and default rates.
-- Analyze **loan distribution by credit score, income bracket, and employment type**.
-- Build a **centralized and reusable dataflow** to standardize data transformation.
-- Ensure **secure and reliable access to on-premises data sources** through a **Power BI Gateway**.
-
----
-
-## 📡 Data Pipeline
-
-- **Source**: MS SQL Server Database (`loan` database)
-- **ETL Layer**: Power BI Dataflow (Gen1)
-- **Access Medium**: On-premises Data Gateway (Standard Mode)
-- **Report Layer**: Power BI Desktop (`.pbix` file)
-
----
-
-## 🔌 Connection Workflow
-
-1. **Install and configure On-premises Data Gateway (Standard Mode)** to bridge on-prem SQL Server with Power BI Service.
-2. **Prepare SQL Server database and tables** using SQL Server Management Studio (SSMS).
-3. **Create a Power BI Dataflow** in Power BI Service connecting to the SQL Server via the gateway.
-4. **Load and transform data centrally** in the Dataflow.
-5. **Consume the Dataflow in Power BI Desktop** for building visuals and reports.
-
-📄 Detailed instructions for this are available in:
-- `/gateway-setup/Gateway_Installation_and_Config.md`
-- `/dataflow-setup/PowerBI_Dataflow_Setup.md`
-
----
+1. **On-Premises Data Gateway**: Installed and configured in Standard Mode to securely bridge Power BI Service with the on-premises SQL Server.
+2. **SQL Server Database**: A `loan` database created in SSMS and populated via flat file import.
+3. **Power BI Dataflow (Gen1)**: 
+   - Connected to SQL Server via Gateway.
+   - Transformed and loaded loan data.
+4. **Power BI Desktop**: Connected to the Dataflow, performed additional data modeling, DAX calculations, and report building.
 
 ## 📊 Visualizations and Rationale
 
@@ -110,18 +87,25 @@ Measures for the Tab 3
 
 ---
 
+## 📌 Expected Outcomes
+
+- Centralized, reusable Dataflow architecture.
+- Power BI dashboards to analyze loan default trends, applicant financial health, and financial risks.
+- Simplified report refresh and scalability for enterprise scenarios.
+
+---
+
 ## 📸 Live Report
 
 (https://app.powerbi.com/view?r=eyJrIjoiYzgxODNiZjYtZjdlYS00M2EzLWEyNzUtOGQ0NGQxOTkwMTI5IiwidCI6IjE0YzAyY2YxLWE4ZjYtNGI3My1iMmNjLTQ0YTM0MjE5N2FiZiJ9)
 
 ---
 
-## 📎 Dependencies & Requirements
+## 🛠️ Tech Stack & Tools
 
-- Power BI Desktop (latest version)
-- Power BI Service (Pro/Premium)
-- MS SQL Server (2019+ recommended)
-- On-Premises Data Gateway (Standard Mode)
-- SQL Server Management Studio (SSMS)
-
----
+- **Power BI Service (Cloud)**
+- **Power BI Dataflows (Gen1)**
+- **On-Premises Data Gateway (Standard Mode)**
+- **SQL Server Management Studio (SSMS)**
+- **Power BI Desktop**
+- **DAX (Data Analysis Expressions)**
