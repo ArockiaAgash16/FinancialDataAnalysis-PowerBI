@@ -122,3 +122,31 @@ Tab 3:
 - **SQL Server Management Studio (SSMS)**
 - **Power BI Desktop**
 - **DAX (Data Analysis Expressions)**
+
+---
+
+## ✅ How to Use
+
+* Download the .pbix file from this repository.
+
+* Open it using Power BI Desktop (May 2023 version or newer).
+
+* Update the Data Source Connection:
+
+   * Go to Transform Data > Data source settings
+
+   * Update the SQL Server instance name and credentials if connecting to your own SQL Server.
+
+   * Or, replace with your own dataset keeping the schema consistent.
+
+* Refresh the Dataflow connections if using Power BI Service Dataflows (optional if included).
+
+* Explore the three interactive dashboard tabs:
+
+   * Loan Default & Overview
+   
+   * Applicant Demographics & Financial Profile
+   
+   * Financial Risk Metrics
+
+* Optionally publish to Power BI Service for sharing and scheduling refreshes via an On-Premises Data Gateway.
