@@ -83,7 +83,20 @@ Measures for the Tab 3
 - **YTD Loan Amount**
 
 📄 Full DAX definitions are available in:
-- `/dax-measures/FinancialMetrics_DAX_Measures.txt`
+- `FinancialMetrics_DAX_Measures.txt`
+
+---
+
+## 📸 Screenshots
+
+Tab 1:
+![image](https://github.com/user-attachments/assets/64fb5dcf-719a-45bb-8d07-4bd367f8cb8f)
+
+Tab 2:
+![image](https://github.com/user-attachments/assets/114c554d-f810-451b-aad4-014ec2ae5742)
+
+Tab 3:
+![image](https://github.com/user-attachments/assets/7a2bc1ed-eef7-4097-aee4-c55c3f3a2621)
 
 ---
 
