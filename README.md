@@ -68,7 +68,7 @@ Measures for the Tab 1
 - **Default Rate by Year**
 - **Loan Amount by Purpose**
 
-Measures for the Tab s
+Measures for the Tab 2
 
 - **Average Loan Amount (High Credit Scores)**
 - **Loan Counts by Education Type**
